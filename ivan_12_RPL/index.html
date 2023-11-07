@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Membuat Kopi Seduh</title>
+</head>
+<body>
+    <h1>Membuat Kopi Seduh</h1>
+    
+    <script>
+        let bahanKopi = "Kopi seduh terbuat dari: Kopi";
+
+        if (confirm("Apakah Anda ingin menambahkan gula?")) {
+            bahanKopi += ", Gula";
+        }
+
+        if (confirm("Apakah Anda ingin menambahkan susu?")) {
+            bahanKopi += ", Susu";
+        }
+
+        const pemanisTambahan = prompt("Apakah Anda ingin menambahkan pemanis lainnya (misalnya, krim)?");
+        if (pemanisTambahan) {
+            bahanKopi += `, ${pemanisTambahan}`;
+        }
+
+        alert(bahanKopi);
+    </script>
+</body>
+</html>
+
+
+
+<!-- algoritmanya
+1)Mulai
+2)Inisialisasi variabel "bahanKopi" dengan string awal "Kopi seduh terbuat dari kopi:"
+3)Menggunakan jendela dialog, tampilkan pesan "Apakah Anda ingin menambahkan gula?"
+4)Menggunakan operator logika AND, cek apakah pengguna memilih untuk menambahkan gula:
+a. Jika YA, tambahkan ", Gula" ke variabel "bahanKopi".
+b. Jika TIDAK, lanjut ke langkah 6.
+5)Menggunakan jendela dialog, tampilkan pesan "Apakah Anda ingin menambahkan susu?"
+6)Menggunakan operator logika AND, cek apakah pengguna memilih untuk menambahkan susu:
+a. Jika YA, tambahkan ", Susu" ke variabel "bahanKopi".
+b. Jika TIDAK, lanjut ke langkah 8.
+7)Menggunakan jendela dialog, tampilkan pesan "Apakah Anda ingin menambahkan pemanis lainnya (misalnya, krim)?
+8)Menggunakan operator logika AND, cek apakah pengguna memilih untuk menambahkan pemanis tambahan:
+a. Jika YA, tambahkan ", [nama pemanis]" ke variabel "bahanKopi".
+b. Jika TIDAK, lanjut ke langkah 10.
+9)Tampilkan isi variabel "bahanKopi" menggunakan jendela dialog dengan pesan "Kopi seduh terbuat dari: [bahanKopi]"
+10)Selesai -->
